@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Monsterrat';
+    src: url('./fonts/monsterrat/Montserrat-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
