@@ -10,16 +10,56 @@ body {
 
 }
 
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('./fonts/source-code-pro/SourceCodePro-Medium.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     color: white;
     text-align: center;
     font-size: 8.0vh;
-    font-family: 'Monsterrat';
+    font-family: 'Source Code Pro';
+    font-weight: lighter;
   }
 
 p {
     color: white;
     text-align: center;
     font-size: 4.0vh;
-    font-family: 'Monsterrat';
+    font-family: 'Source Code Pro';
 }
+
+/* source: https://codepen.io/denic/pen/GRoOxbM */
+.wrapper {
+    height: 25vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing {
+    width: 11.65ch;
+    animation: typing 1.4s steps(12), blink .4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Source Code Pro';
+    font-size: 8.0vh;
+    letter-spacing: -1px;
+    color: white;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
